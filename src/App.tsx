@@ -14,8 +14,21 @@ function App() {
   return (
     <>
       <h1>This is auto counter increaser {count}</h1>
+      <button style={{ padding: 1, margin: 5 }} onClick={pauseCounter}>
+        {" "}
+        Pause{" "}
+      </button>
+      <button> Resume </button>
     </>
   );
+}
+
+const pauseCounter = () => {
+  setCount((prev) => prev);
+};
+
+const resumeCounter = () => {
+  
 }
 
 export default App;
