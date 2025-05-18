@@ -5,7 +5,10 @@ function App() {
   useEffect(() => {
     const intervel = setInterval(() => {
       setCount((prevCount) => prevCount + 1);
-    })
+    }, 1000);
+
+    // unmount the intervel
+    return () => clearInterval(intervel);
   }, []);
 
   return (
