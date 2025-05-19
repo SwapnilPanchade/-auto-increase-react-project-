@@ -21,7 +21,7 @@ function App() {
       }, 1000);
     }
   };
-  // This is the fn to puase the counter 
+
   const pauseCounter = () => {
     clearInterval(intervelRef.current);
     intervelRef.current = null;
