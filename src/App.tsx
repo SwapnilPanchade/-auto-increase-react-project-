@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Timeout = any;
 
+//maintain the state as it is here
 function App() {
   const [count, setCount] = useState<number>(0);
   const intervelRef = useRef<null | string | number | Timeout | undefined>(
